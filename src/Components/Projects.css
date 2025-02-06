@@ -1,0 +1,70 @@
+.myProjects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 180px 100px;
+
+}
+
+.myProjects h1{
+    font-size: 45px;
+    font-weight: 500;
+    background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+.myProjects-array{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px; 
+    margin-bottom: 20px;
+    margin-top: 20px;  
+}
+
+.myProjects-array img{
+    width: 350px;
+    height: 230px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: solid #777709 1px;
+}
+
+.myProjects-array img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    border: 3px solid #cfcf23;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.myProject-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    border: 2px solid white;
+    width: 130px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.myProject-button p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.myProject-button:hover{
+    transform: scale(1.05);
+    border-color: #98dd18;
+
+}

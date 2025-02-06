@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer hr{
+    color: aliceblue;
+    margin-bottom: 30px;
+}

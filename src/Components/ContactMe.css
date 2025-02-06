@@ -1,0 +1,116 @@
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 80px 100px;
+}
+
+.contactMe h1{
+    font-size: 45px;
+    font-weight: 500;
+    background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    gap: 100px;
+    color: #e2e0e0;
+    margin-bottom: 50px;
+}
+
+.contact-container-left{
+    display: flex;  
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+    
+}
+
+.contact-container-left h2{
+    font-size: 40px;
+    
+}
+
+.contact-container-left p{
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.contact-options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-option{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.contact-container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+}
+
+.contact-container-right input{
+    border: none;
+    width: 400px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    font-family: Outfit;
+}
+
+.contact-container-right textarea{
+    border: none;
+    width: 450px;
+    height: 140px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: Outfit;
+
+}
+
+.contact-container-right label{
+    margin-right: 100px;
+    font-family: Outfit;
+}
+
+.messageSubmitBtn{
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #3b8b0c 0.36%, #edff47 102.0%);
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: Outfit;
+}
+
+.messageSubmitBtn:hover{
+    transform: scale(1.1);
+}
