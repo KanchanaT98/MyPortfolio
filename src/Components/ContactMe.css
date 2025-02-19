@@ -1,4 +1,4 @@
-.contactMe{
+#contactMe{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,13 +7,9 @@
     margin: 80px 100px;
 }
 
-.contactMe h1{
+#contactMe h1{
     font-size: 45px;
     font-weight: 500;
-    background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
@@ -34,6 +30,10 @@
 
 .contact-container-left h2{
     font-size: 40px;
+    background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
 
@@ -54,10 +54,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     
 }
 

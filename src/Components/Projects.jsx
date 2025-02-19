@@ -5,7 +5,7 @@ import arrow from '../assets/right-arrow.png'
 
 const Projects = () => {
     return(
-        <div className="myProjects">
+        <div id="myProjects">
             <h1>My Projects</h1>
             <div className="myProjects-array">
                 {project_array.map((project,index) => {

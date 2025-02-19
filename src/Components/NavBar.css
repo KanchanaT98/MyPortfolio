@@ -44,3 +44,35 @@ body{
 .nav-connect:hover{
     transform: scale(1.05);
 }
+
+.nav-menu li{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+.nav-menu li:hover{
+    transform: scale(1.07);
+    background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#nav-menu-id{
+    display: flex;
+    align-self: center;
+    margin-top: 4px;
+    width: 20px;
+    height: 2px;
+    transform: scale(1.07);
+}
+
+.anchor-link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    
+}

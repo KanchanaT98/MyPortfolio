@@ -6,9 +6,7 @@ const Footer = () => {
         <div className='footer'>
             <hr/>
             <div className='Footer-container'>
-                <div className='Footer-container-left'>
-                    
-                </div>
+                <p>© 2025 Kanchana Thennakoon. Alright Reserved.</p>
             </div>
         </div>
     )

@@ -1,17 +1,17 @@
-.profile{
+#profile{
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 35px;
 }
 
-.profile img{
+#profile img{
     margin-top: 150px;
     height: 250px;
     width: 250px;
 }
 
-.profile h1{
+#profile h1{
     text-align: center;
     width: 70%;
     font-size: 34px;
@@ -19,14 +19,14 @@
     
 }
 
-.profile h1 span{
+#profile h1 span{
     background: linear-gradient(267deg, #3b8b0c 0.36%, #edff47 102.0%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.profile p{
+#profile p{
     position: relative;
     top: -20px;
     width: 60%;
@@ -45,7 +45,7 @@
 
 }
 
-.profile-connect{
+#profile-connect{
     padding: 17px 25px;
     border-radius: 50px;
     background: linear-gradient(267deg, #3b8b0c 0.36%, #edff47 102.0%);
@@ -68,7 +68,7 @@
     text-align: center;
 }
 
-.profile-connect:hover{
+#profile-connect:hover{
     transform: scale(1.05);
 }
 
@@ -77,5 +77,11 @@
     border-color: #98dd18;
 }
 
-
-
+.anchor-link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    
+}

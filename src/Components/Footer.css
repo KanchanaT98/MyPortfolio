@@ -8,3 +8,9 @@
     color: aliceblue;
     margin-bottom: 30px;
 }
+
+.Footer-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

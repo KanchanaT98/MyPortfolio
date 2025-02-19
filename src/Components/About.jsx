@@ -4,7 +4,7 @@ import Web2 from '../assets/web2.jpeg';
 
 const About = () => {
     return(
-        <div className="aboutme">
+        <div id="aboutme">
             <div className="title">
                 <h1>About Me</h1>
             </div>

@@ -11,7 +11,7 @@ const message = useState['message','setMessage'];
 
 const ContactMe = () => {
     return(
-        <div className='contactMe'>
+        <div id='contactMe'>
             <h1>Get in Touch</h1>
             <div className='contact-container'>
                 <div className='contact-container-left'>

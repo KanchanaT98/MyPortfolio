@@ -10,7 +10,7 @@ import react from '../assets/react.gif'
 
 const Services = () => {
     return(
-        <div className="services">
+        <div id="services">
             <h1>My Services</h1>
             <div className="services-sections">
                 <div className="services-left">
