@@ -4,6 +4,11 @@ import project_array from '../assets/project_data.js'
 import arrow from '../assets/right-arrow.png'
 
 const Projects = () => {
+
+    const handleClick = () => {
+        window.open("https://github.com/KanchanaT98?tab=repositories");
+    }
+
     return(
         <div id="myProjects">
             <h1>My Projects</h1>
@@ -12,7 +17,7 @@ const Projects = () => {
                     return <img key={index} src={project.p_img} alt=""/>
                 })}
             </div>
-            <div className="myProject-button">
+            <div className="myProject-button" onClick={handleClick}>
                 <p className="myProject-button-btnTitile">Visit GitHub</p>
                 <img src={arrow} alt="" style={{width:"30px", height:"20px"}}/>
             </div>

@@ -5,11 +5,28 @@ import phone_icon from '../assets/phone.png'
 import location_icon from '../assets/location.png'
 import { useState } from 'react'
 
-const senderName = useState['name','setName'];
-const email = useState['email','setEmail'];
-const message = useState['message','setMessage'];
-
 const ContactMe = () => {
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        formData.append("access_key", "63f8198e-7b33-4b0c-8ec9-9956a32e8361");
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          alert("Message Submitted Successfully");
+          event.target.reset();
+        } else {
+          console.log("Error", data);
+          alert(data.message);
+        }
+    };
+
     return(
         <div id='contactMe'>
             <h1>Get in Touch</h1>
@@ -30,22 +47,23 @@ const ContactMe = () => {
                     </div>
 
                 </div>
-                <div className='contact-container-right'>
-                    <div className='contact-name'>
-                        <label htmlFor=''>Name</label>
-                        <input value={senderName} type='text' placeholder='Enter your name' name='name'/>
-                    </div>
-                    <div className='contact-email'>
-                        <label htmlFor=''>Email</label>
-                        <input value={email} type='text' placeholder='Enter your email' name='email'/>
-                    </div>
-                    <div className='contact-message'>
-                        <label htmlFor=''>Message</label>
-                        <textarea value={message} rows='8' placeholder='Enter your message' name='message'/>
-                    </div> 
-                    <div className='messageSubmitBtn'>Submit</div>   
-                </div>
+                    <form className='contact-container-right' onSubmit={onSubmit}>
+                        <div className='contact-name'>
+                            <label htmlFor=''>Name</label>
+                            <input type='text' placeholder='Enter your name' name='name'/>
+                        </div>
+                        <div className='contact-email'>
+                            <label htmlFor=''>Email</label>
+                            <input type='text' placeholder='Enter your email' name='email'/>
+                        </div>
+                        <div className='contact-message'>
+                            <label htmlFor=''>Message</label>
+                            <textarea rows='8' placeholder='Enter your message' name='message'/>
+                        </div> 
+                        <button id='messageSubmitBtn' type = "submit" >Submit</button>
+                    </form>  
             </div>
+            
 
         </div>
     )

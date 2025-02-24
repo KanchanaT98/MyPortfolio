@@ -99,15 +99,18 @@
     font-family: Outfit;
 }
 
-.messageSubmitBtn{
+#messageSubmitBtn{
+    border: none;
     padding: 10px 25px;
     border-radius: 50px;
     background: linear-gradient(267deg, #3b8b0c 0.36%, #edff47 102.0%);
     cursor: pointer;
     transition: 0.2s;
     font-family: Outfit;
+    font-size: 15px;
+    font-weight: 500;
 }
 
-.messageSubmitBtn:hover{
+#messageSubmitBtn:hover{
     transform: scale(1.1);
 }
