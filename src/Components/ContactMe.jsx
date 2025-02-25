@@ -3,7 +3,6 @@ import './ContactMe.css'
 import mail_icon from '../assets/email (3).png'
 import phone_icon from '../assets/phone.png'
 import location_icon from '../assets/location.png'
-import { useState } from 'react'
 
 const ContactMe = () => {
 
@@ -12,19 +11,20 @@ const ContactMe = () => {
         const formData = new FormData(event.target);
         formData.append("access_key", "63f8198e-7b33-4b0c-8ec9-9956a32e8361");
         const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          body: formData
+        method: "POST",
+        body: formData
         });
     
         const data = await response.json();
     
         if (data.success) {
-          alert("Message Submitted Successfully");
-          event.target.reset();
+        alert("Message Submitted Successfully");
+        event.target.reset();
         } else {
-          console.log("Error", data);
-          alert(data.message);
+        console.log("Error", data);
+        alert(data.message);
         }
+        
     };
 
     return(
@@ -50,15 +50,15 @@ const ContactMe = () => {
                     <form className='contact-container-right' onSubmit={onSubmit}>
                         <div className='contact-name'>
                             <label htmlFor=''>Name</label>
-                            <input type='text' placeholder='Enter your name' name='name'/>
+                            <input type='text' placeholder='Enter your name' name='name' required/>
                         </div>
                         <div className='contact-email'>
                             <label htmlFor=''>Email</label>
-                            <input type='text' placeholder='Enter your email' name='email'/>
+                            <input type='text' placeholder='Enter your email' name='email' required/>
                         </div>
                         <div className='contact-message'>
                             <label htmlFor=''>Message</label>
-                            <textarea rows='8' placeholder='Enter your message' name='message'/>
+                            <textarea rows='8' placeholder='Enter your message' name='message' required/>
                         </div> 
                         <button id='messageSubmitBtn' type = "submit" >Submit</button>
                     </form>  
