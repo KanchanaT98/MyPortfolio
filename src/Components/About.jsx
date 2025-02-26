@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import Web2 from '../assets/web2.jpeg';
+import Web2 from '../assets/Web2.jpeg';
 
 const About = () => {
     return(
