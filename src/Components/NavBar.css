@@ -76,3 +76,54 @@ body{
     align-self: center;
     
 }
+
+.nav-mob-open{
+    display: none;
+}
+
+.nav-mob-close{
+    display: none;
+}
+
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+
+    .nav-connect{
+        display: none;
+    }
+
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .nav-mob-close{
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .nav-menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        top: 0px;
+        gap: 50px;
+        background-color: rgb(30, 46, 2);
+        width: 300px;
+        height: 100%;
+        border-radius: 10px;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+}
