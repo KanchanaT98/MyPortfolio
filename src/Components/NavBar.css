@@ -131,3 +131,20 @@ body{
         right: -350px;
     }
 }
+
+@media(max-width: 360px){
+    .navbar{
+        margin: 20px 20px;
+    }
+
+    .Head-Title{
+        font-size: 28px;
+    }
+
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+    }
+}

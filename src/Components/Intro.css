@@ -48,6 +48,7 @@
 #profile-connect{
     padding: 17px 25px;
     border-radius: 50px;
+    text-align: center;
     background: linear-gradient(267deg, #3b8b0c 0.36%, #edff47 102.0%);
     cursor: pointer;
     transition: 0.2s;
@@ -83,5 +84,45 @@
     text-decoration: none;
     color: white;
     align-self: center;
+    
+}
+
+@media(max-width:360px){
+
+    #profile h1{
+        text-align: center;
+        width: 70%;
+        font-size: 32px;
+        font-weight: 600;
+        
+    }
+
+    #profile p{
+        position: relative;
+        top: -20px;
+        width: 70%;
+        justify-self: center;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    #profile-connect{
+        padding: 13px 20px;
+        border-radius: 50px;
+        text-align: center;
+        background: linear-gradient(267deg, #3b8b0c 0.36%, #edff47 102.0%);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
     
 }

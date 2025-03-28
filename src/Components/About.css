@@ -129,3 +129,21 @@
         width: 60%;
     }
 }
+
+@media(max-width:360px){
+
+    .right{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -18,7 +18,7 @@ const Intro = () => {
     return(
         <div id="profile">
             <img src={web1} alt=""/>
-            <h1><span>I'm Kanchana Thennakoon,</span>&nbsp;Software Engineer from Kandy, Sri Lanka</h1>
+            <h1><span>I'm Kanchana Thennakoon,</span>&nbsp; Software Engineer Intern from Kandy, Sri Lanka</h1>
             <p>With a Computer Science Degree from the University of Peradeniya, I have done multiple projects using Springboot and ReactJS. I'm Currently working as an Software Engineering Intern.</p>
             <div className="buttons">
                 
