@@ -54,3 +54,23 @@
     text-align: center;
 }
 
+@media(max-width:768px){
+ 
+    #services h1{
+        height: fit-content;
+        font-size: 40px;
+        font-weight: 500;
+        background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    }
+
+    .services-sections{
+        margin-top: 100px;
+        display: flex; 
+        gap: 40px;  
+    }
+
+}

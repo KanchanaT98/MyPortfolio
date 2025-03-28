@@ -114,3 +114,151 @@
 #messageSubmitBtn:hover{
     transform: scale(1.1);
 }
+
+@media(max-width:768px){
+    #contactMe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+    }
+
+    #contactMe h1{
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .contact-container-left{
+        display: flex;
+        width: 90%;
+        
+    }
+
+    .contact-options{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-container-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    
+    }
+
+    .contact-container{
+        flex-direction: column;
+        color: #e2e0e0;
+        margin-bottom: 50px;
+    }
+
+    .contact-container-right textarea{
+        border: none;
+        width: 450px;
+        height: 140px;
+        padding-left: 20px;
+        border-radius: 4px;
+        background: #32323c;
+        color: #A0A0A0;
+        font-size: 16px;
+        margin-top: 10px;
+        font-family: Outfit;
+    
+    }
+
+    .contact-container-right label{
+        margin-right: 100px;
+        font-family: Outfit;
+    }
+}
+
+@media(max-width:360px){
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        align-items: center;
+        color: #e2e0e0;
+        margin-bottom: 50px;
+        width: 320px;
+    }
+
+    .contact-container-left{
+        display: flex;  
+        flex-direction: column;
+        width: 300px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        gap: 40px;
+        
+    }
+
+    .contact-container-left p{
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .contact-container-right{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        width: 320px;
+    
+    }
+    
+    .contact-container-right input{
+        border: none;
+        width: 300px;
+        height: 40px;
+        padding-left: 20px;
+        border-radius: 4px;
+        background: #32323c;
+        color: #A0A0A0;
+        font-size: 15px;
+        margin-top: 10px;
+        justify-content: center;
+        font-family: Outfit;
+    }
+    
+    .contact-container-right textarea{
+        border: none;
+        width: 300px;
+        height: 140px;
+        padding-left: 20px;
+        border-radius: 4px;
+        background: #32323c;
+        color: #A0A0A0;
+        font-size: 16px;
+        margin-top: 10px;
+        font-family: Outfit;
+    
+    }
+    
+    .contact-container-right label{
+        margin-right: 100px;
+        font-family: Outfit;
+    }
+    
+    #messageSubmitBtn{
+        border: none;
+        display: flex;
+        align-self: center;
+        padding: 10px 25px;
+        border-radius: 50px;
+        background: linear-gradient(267deg, #3b8b0c 0.36%, #edff47 102.0%);
+        cursor: pointer;
+        transition: 0.2s;
+        font-family: Outfit;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

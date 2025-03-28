@@ -90,6 +90,10 @@ body{
         margin: 20px 50px;
     }
 
+    .Head-Title{
+        font-size: 33px;
+    }
+
     .nav-connect{
         display: none;
     }

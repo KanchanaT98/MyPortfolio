@@ -68,3 +68,86 @@
     border-color: #98dd18;
 
 }
+
+
+@media(max-width:768px){
+
+    #myProjects{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        margin: 180px 100px;
+    
+    }
+
+    #myProjects h1{
+        font-size: 40px;
+        font-weight: 500;
+        background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    .myProjects-array{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px; 
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .myProjects-array img{
+        width: 390px;
+        height: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: solid #777709 2px;
+    }
+}
+
+@media(max-width:360px){
+
+    #myProjects{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        margin: 180px 100px;
+    
+    }
+
+    #myProjects h1{
+        font-size: 40px;
+        font-weight: 500;
+        background: linear-gradient(267deg, #3b6621 0.36%, #ebf57e 102.0%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    .myProjects-array{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px; 
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .myProjects-array img{
+        width: 390px;
+        height: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: solid #777709 2px;
+    }
+}
