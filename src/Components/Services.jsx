@@ -25,11 +25,11 @@ const Services = () => {
                 </div>
                 <div className="services-middle">
                     <div className="postman" style={{width:"200px", height:"200px"}}>
-                        <img src={postman} alt="" style={{width:"150px", height:"150px"}}/>
+                        <img src={postman} alt=""/>
                         <h2 style={{fontWeight:600}}>Testing</h2>
                     </div>
                     <div className="VCS" style={{width:"200px", height:"200px"}}>
-                        <img src={github} alt="" style={{width:"150px", height:"150px"}}/>
+                        <img src={github} alt=""/>
                         <h2 style={{fontWeight:600}}>VCS</h2>
                     </div>
                 </div>
