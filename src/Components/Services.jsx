@@ -14,31 +14,31 @@ const Services = () => {
             <h1>My Services</h1>
             <div className="services-sections">
                 <div className="services-left">
-                    <div className="frontend" style={{width:"200px", height:"200px"}}>
+                    <div className="frontend">
                         <img src={react} alt=""/>
                         <h2 style={{fontWeight:600}}>FrontEnd</h2>
                     </div>
-                    <div className="backend" style={{width:"200px", height:"200px"}}>
+                    <div className="backend">
                         <img src={web4} alt=""/>
                         <h2 style={{fontWeight:600}}>BackEnd</h2>
                     </div>
                 </div>
                 <div className="services-middle">
-                    <div className="postman" style={{width:"200px", height:"200px"}}>
+                    <div className="postman">
                         <img src={postman} alt=""/>
                         <h2 style={{fontWeight:600}}>Testing</h2>
                     </div>
-                    <div className="VCS" style={{width:"200px", height:"200px"}}>
+                    <div className="VCS">
                         <img src={github} alt=""/>
                         <h2 style={{fontWeight:600}}>VCS</h2>
                     </div>
                 </div>
                 <div className="services-right">
-                    <div className="database" style={{width:"200px", height:"200px"}}>
+                    <div className="database">
                         <img src={web5} alt=""/>
                         <h2 style={{fontWeight:600}}>Database</h2>
                     </div>
-                    <div className="cloud" style={{width:"200px", height:"200px"}}>
+                    <div className="cloud">
                         <img src={Web6} alt=""/>
                         <h2 style={{fontWeight:600}}>Cloud</h2>
                     </div>

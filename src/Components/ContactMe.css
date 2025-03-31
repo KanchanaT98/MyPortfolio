@@ -176,7 +176,8 @@
     }
 }
 
-@media(max-width:360px){
+
+@media(max-width:520px){
 
     .contact-container{
         display: flex;
